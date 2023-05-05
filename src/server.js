@@ -14,7 +14,7 @@ mongoose.set("strictQuery", false);
 
 const mongoDbPath = "mongodb+srv://esefaerd:Enessefa.1@cluster0.7cs5vsh.mongodb.net/notesdb";
 mongoose.connect(mongoDbPath).then(function() {
-    app.post("/", function(req, res) {
+    app.get("/", function(req, res) {
         const response = { statuscode: res.statusCode, message: "API Worksssssssssssssssss!" };
         res.json(response);
     });
